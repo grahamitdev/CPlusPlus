@@ -48,11 +48,15 @@ int main(void)
 	walter.setSex('M');
 	walter.introduce();
 	
+	#if 0
+	//验证定义性声明
 	while(1)
 	{
+		//Person graham;//定义性声明
 		Person graham = Person();
 		graham.introduce();
 	}
+	#endif
 	
 	
 	return 0;
