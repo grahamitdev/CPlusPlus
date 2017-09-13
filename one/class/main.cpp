@@ -7,8 +7,8 @@
 //class默认是private私有的
 
 class Person{
-//private
-//protect
+//private:修饰的成员只能在成员函数中直接访问，不能通过对象访问
+//protect:修饰的成员能在成员函数中直接访问，也能通过对象访问
 private:
 	int age;
 	char name[20];
