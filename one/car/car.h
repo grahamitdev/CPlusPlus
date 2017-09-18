@@ -18,10 +18,11 @@ public:
 	Car(string brand,const double weight,const int wheel);//带参构造函数
 	Car(const Car &car);//引用
 	//拷贝构造函数
+	//当对象里有堆空间时，需要重写拷贝构造函数
 
 	//析构函数
 	//函数名和类名相同
-	//类名前～
+	//类名前~
 	//无参数，所以析构函数只有一个
 	//用来对对象的清理
 	//主函数里不需要调用，自动调用
