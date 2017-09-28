@@ -24,11 +24,12 @@ SingleTone *SingleTone::instance = 0;
 //string Stu::name;
 //string stu::name = "walter";
 //SingleTone *SingleTone::instance;//初始化
-//SingleTone *SingleTone::instance = 0;//初始化并赋值
+//SingleTone *SingleTone::instance = NULL;//初始化并赋值
 //static成员变量访问
 //例如：
 //Stu::name;
-//SingleTone::instance;
+//SingleTone::instance;//类名访问
+//object.instance;//对象访问
 
 //可通过类名直接访问static
 //可通过对象访问(public)static
@@ -43,11 +44,11 @@ SingleTone *SingleTone::instance = 0;
 //在.cpp定义函数时，要先初始化静态成员变量，这时候是时参
 //非静态成员函数可以访问所有成员(静态/非静态)
 //静态成员函数定义性声明：static 类型名 名字();
-//例如：
-//
+//例如：static Stu getStuName(void);
 //定义：返回值类型 类名::名字(){...}
+//例如：string Stu::getStuName(void){...}
 //使用：类名::静态函数名字();
-
+//例如：Stu::getStuName();
 //可通过类名直接访问static
 //可通过对象访问(public)static
 
