@@ -12,6 +12,18 @@ public:
 	~MyString();
 
 	char *getData();
+	bool empty();
+	int size();
+	MyString operator+(const MyString &str);
+	bool operator==(const MyString &str);
+	MyString &operator=(const MyString &str);
+	MyString &operator+=(const MyString &str);
+	char operator[](const int &index);
+	friend ostream &operator<<(ostream &output,const MyString &str);
+	friend istream &operator>>(istream &input,const MyString &str);
+
+
+	char *getData();
 
 
 

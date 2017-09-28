@@ -13,8 +13,7 @@ MyString::MyString()
 MyString::MyString(const MyString &str)
 {
 	cout << "MyString(const MyString &str)" << endl;
-	int len = strlen(str.data);
-	if(str.data == NULL)//这个方法再类里，所以可以访问private
+	if(str.data == NULL)
 	{
 		data = new char[1];
 		data[0] = '\0';
